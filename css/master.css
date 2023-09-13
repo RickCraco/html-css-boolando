@@ -30,6 +30,11 @@ li{
     width: 150px;
 }
 
+.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .d-flex{
     display: flex;
     justify-content: space-between;
@@ -55,6 +60,12 @@ li{
 /* Header */
 header{
     background-color: rgb(255, 123, 0);
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav{
@@ -64,11 +75,89 @@ nav{
 
 /* Main */
 
+main{
+    margin-top: 70px;
+}
+
 .card-wrapper{
     width: 1200px;
     padding: 20px 20px;
 }
 
 .card{
-    width: calc(1200 / 3);
+    width: calc(100% / 3 - 10px);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.posizione-scritte{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.posizione-cuore{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.sconto{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}
+
+.color-red{
+    color: red;
+}
+
+.text-decoration{
+    text-decoration: line-through;
+}
+
+.sostenibilitá{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+}
+
+.heart{
+    background-color: white;
+    padding: 5px 5px;
+    font-size: 1.5em;
+}
+
+.heart:hover{
+    color: red;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+}
+
+.container-footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.find-us{
+    color: white;
+    display: inline-block;
+    padding-bottom: 20px;
 }
