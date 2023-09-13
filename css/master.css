@@ -133,6 +133,17 @@ img{
     font-size: 1.5em;
 }
 
+.img-hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .img-hover{
+    display: block;
+}
+
 .heart:hover{
     color: red;
 }
